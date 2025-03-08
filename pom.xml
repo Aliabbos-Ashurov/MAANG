@@ -6,7 +6,38 @@
 
     <groupId>com.abbos.maang</groupId>
     <artifactId>MAANG</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
+    <description>
+        Data Structures, Algorithms, Design Patterns, LeetCode problems, and System Design concepts
+    </description>
+
+    <developers>
+        <developer>
+            <id>abbos</id>
+            <name>Aliabbos Ashurov</name>
+            <email>aliabbosashurov@gmail.com</email>
+            <url>https://github.com/Aliabbos-Ashurov</url>
+            <roles>
+                <role>Project Lead</role>
+                <role>Java Software Engineer</role>
+            </roles>
+            <properties>
+                <twitter>https://x.com/aliabbosashurov?s=21</twitter>
+                <linkedin>https://www.linkedin.com/in/aliabbos-ashurov-4b64b628b/</linkedin>
+                <active>true</active>
+            </properties>
+            <timezone>+5</timezone>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/Aliabbos-Ashurov/MAANG/issues</url>
+    </issueManagement>
+
+
+    <url>https://github.com/Aliabbos-Ashurov/MAANG.git</url>
+    <inceptionYear>2025</inceptionYear>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
