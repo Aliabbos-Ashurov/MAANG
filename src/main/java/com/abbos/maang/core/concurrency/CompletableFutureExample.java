@@ -1,4 +1,4 @@
-package com.abbos.maang.concurrency;
+package com.abbos.maang.core.concurrency;
 
 import java.util.concurrent.*;
 import java.util.logging.Level;

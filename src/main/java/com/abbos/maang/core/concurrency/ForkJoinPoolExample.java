@@ -1,4 +1,4 @@
-package com.abbos.maang.concurrency;
+package com.abbos.maang.core.concurrency;
 
 import java.util.Arrays;
 import java.util.List;
