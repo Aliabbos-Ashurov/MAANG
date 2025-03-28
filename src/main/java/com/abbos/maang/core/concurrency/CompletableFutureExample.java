@@ -5,8 +5,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
+ * Demonstrates asynchronous processing using CompletableFuture with a custom thread pool.
+ *
  * @author Aliabbos Ashurov
- * @since 17/March/2025  16:41
+ * @date March 28, 2025
  */
 public class CompletableFutureExample {
     private static final Logger LOG = Logger.getLogger(CompletableFutureExample.class.getName());
@@ -18,6 +20,11 @@ public class CompletableFutureExample {
         LOG.setLevel(Level.ALL);
     }
 
+    /**
+     * Executes a pipeline of asynchronous tasks using CompletableFuture and logs the final result.
+     *
+     * @param args command-line arguments (unused)
+     */
     public static void main(String[] args) {
         try {
             CompletableFuture
@@ -34,6 +41,14 @@ public class CompletableFutureExample {
         }
     }
 
+    /**
+     * Simulates a processing step with a delay, logging progress and handling interruptions.
+     *
+     * @param input the input string to process
+     * @param delaySeconds the delay duration in seconds
+     * @return the processed input string
+     * @throws RuntimeException if interrupted during processing
+     */
     private static String processStep(String input, int delaySeconds) {
         try {
             LOG.info("Processing: " + input);
@@ -46,6 +61,9 @@ public class CompletableFutureExample {
         }
     }
 
+    /**
+     * Shuts down the executor service gracefully, forcing termination if necessary.
+     */
     private static void shutdownExecutor() {
         LOG.info("Shutting down executor");
         EXECUTOR.shutdown();

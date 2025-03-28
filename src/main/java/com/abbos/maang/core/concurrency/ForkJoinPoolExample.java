@@ -64,7 +64,7 @@ public class ForkJoinPoolExample {
         protected String compute() {
             String longest = "";
             if ((to - from) <= THRESHOLD) {
-                // Directly find longest filename in small chunk
+                // Directly find the longest filename in small chunk
                 for (int i = from; i < to; i++) {
                     String current = filenames.get(i);
                     if (current.length() > longest.length()) {
