@@ -1,5 +1,7 @@
 package com.abbos.maang.core.http;
 
+import com.abbos.maang.Example;
+import com.abbos.maang.Tag;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
@@ -13,7 +15,9 @@ import java.net.InetSocketAddress;
  * @version 1.0
  * @since 2025-04-03
  */
-public class SimpleRestApi {
+@Tag("api")
+@Example(message = "example of simple server")
+public class RestServer {
     public static void main(String[] args) throws IOException {
         HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
 
@@ -25,6 +29,7 @@ public class SimpleRestApi {
         System.out.println("Server started at http://localhost:8080/");
     }
 
+    @Tag({"http", "handler"})
     static class HelloHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
@@ -36,6 +41,7 @@ public class SimpleRestApi {
         }
     }
 
+    @Tag({"http", "GET", "get", "handler"})
     static class JsonHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
