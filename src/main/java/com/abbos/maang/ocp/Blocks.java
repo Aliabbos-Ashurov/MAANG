@@ -1,14 +1,11 @@
 package com.abbos.maang.ocp;
 
-import org.junit.Test;
-
 /**
  * @author Aliabbos Ashurov
  * @since 2025-05-29
  */
 public class Blocks {
 
-    @Test
     public void switchTest() {
         final int score1 = 8, score2 = 3;
         Integer myScore = 7;

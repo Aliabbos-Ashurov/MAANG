@@ -16,7 +16,7 @@ import java.net.InetSocketAddress;
  * @since 2025-04-03
  */
 @Tag("api")
-@Example(message = "example of simple server")
+@Example("example of simple server")
 public class RestServer {
     public static void main(String[] args) throws IOException {
         HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
