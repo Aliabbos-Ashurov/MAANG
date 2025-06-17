@@ -1,7 +1,7 @@
-package com.abbos.maang.core.http;
+package com.abbos.maang.core.protocol;
 
-import com.abbos.maang.Example;
-import com.abbos.maang.Tag;
+import com.abbos.maang.annotation.Example;
+import com.abbos.maang.annotation.Tag;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
