@@ -1,4 +1,4 @@
-package com.abbos.maang.mapper;
+package com.abbos.maang.core.stream;
 
 import java.util.Objects;
 
