@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="maven.xsd">
+    <groupId>com.abbos.maang</groupId>
+    <artifactId>maang</artifactId>
+    <version>1.0.0</version>
+    <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>artifact-example</artifactId>
+            <version>1.0.0</version>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+
+    <developers>
+        <developer>
+            <id>1</id>
+            <username>abbos</username>
+        </developer>
+    </developers>
+</project>

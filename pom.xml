@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.abbos.maang</groupId>
+    <artifactId>MAANG</artifactId>
+    <version>1.0</version>
+    <description>
+        Data Structures, Algorithms, Design Patterns, LeetCode problems, and System Design concepts
+    </description>
+
+    <developers>
+        <developer>
+            <id>abbos</id>
+            <name>Aliabbos Ashurov</name>
+            <email>aliabbosashurov@gmail.com</email>
+            <url>https://github.com/Aliabbos-Ashurov</url>
+            <roles>
+                <role>Project Lead</role>
+                <role>Java Software Engineer</role>
+            </roles>
+            <properties>
+                <twitter>https://x.com/aliabbosashurov?s=21</twitter>
+                <linkedin>https://www.linkedin.com/in/aliabbos-ashurov-4b64b628b/</linkedin>
+                <active>true</active>
+            </properties>
+            <timezone>+5</timezone>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/Aliabbos-Ashurov/MAANG/issues</url>
+    </issueManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <release>21</release>
+                    <source>21</source>
+                    <target>21</target>
+                    <compilerArgs>--enable-preview</compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <url>https://github.com/Aliabbos-Ashurov/MAANG.git</url>
+    <inceptionYear>2025</inceptionYear>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.abbos</groupId>
+            <artifactId>leetcode-commons</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.13.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.27.3</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.errorprone</groupId>
+            <artifactId>error_prone_annotations</artifactId>
+            <version>2.36.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.38</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>7.0.0-M3</version>
+        </dependency>
+    </dependencies>
+
+</project>
